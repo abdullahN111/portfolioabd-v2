@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import emailjs from "emailjs-com";
+import { StarBackground } from "@/components/StarBackground";
 
 export const ContactSection = () => {
   const { toast } = useToast();
@@ -56,6 +57,7 @@ export const ContactSection = () => {
       id="contact"
       className="mt-36 px-6 md:px-12 bg-secondary/30 relative"
     >
+      <StarBackground />
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

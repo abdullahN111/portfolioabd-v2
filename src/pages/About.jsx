@@ -1,10 +1,12 @@
 import { Rocket, Brain } from "lucide-react";
 import AboutSection from "@/components/AboutSection";
 import { exploringSkills } from "@/data/skills";
+import { StarBackground } from "@/components/StarBackground";
 
 export const About = () => {
   return (
     <div className="pt-18">
+      <StarBackground />
       <AboutSection />
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto max-w-5xl text-center space-y-5">

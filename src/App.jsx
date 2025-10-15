@@ -4,7 +4,7 @@ import NotFound from "@/pages/NotFound";
 import { ContactSection } from "@/pages/ContactSection";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { StarBackground } from "@/components/StarBackground";
+
 import { projects } from "@/data/projects";
 import { ProjectsSection } from "@/pages/ProjectSection";
 import { About } from "@/pages/About";
@@ -13,7 +13,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <StarBackground />
 
         <Navbar />
 

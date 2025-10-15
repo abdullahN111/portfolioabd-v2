@@ -1,9 +1,11 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
+import { StarBackground } from "@/components/StarBackground";
 
 export const ProjectsSection = ({ projects, padding, display }) => {
   return (
     <section id="projects" className={`${padding} relative`}>
+      <StarBackground />
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
