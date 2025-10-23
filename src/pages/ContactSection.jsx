@@ -67,6 +67,9 @@ export const ContactSection = () => {
             Have a project in mind or want to collaborate? Feel free to reach
             out. I'm always open to discussing new opportunities.
           </p>
+          <div className="mt-6 mb-12 flex justify-center">
+          <span className="h-[2px] w-24 bg-gradient-to-r from-primary/60 via-primary to-primary/60 rounded-full" />
+        </div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">

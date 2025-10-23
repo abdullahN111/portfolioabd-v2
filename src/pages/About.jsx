@@ -5,10 +5,10 @@ import { StarBackground } from "@/components/StarBackground";
 
 export const About = () => {
   return (
-    <div className="pt-18">
+    <div className="space-y-8 mt-16 sm:mt-20">
       <StarBackground />
       <AboutSection />
-      <section className="py-12 bg-muted/30">
+      <section className="bg-muted/30">
         <div className="container mx-auto max-w-5xl text-center space-y-5">
           <div className="flex justify-center">
             <Rocket className="h-10 w-10 text-primary mb-2" />
@@ -22,8 +22,11 @@ export const About = () => {
             systems can simplify workflows, optimize business logic, and bring
             smarter web experiences to life.
           </p>
+          <div className="mt-6 mb-12 flex justify-center">
+            <span className="h-[2px] w-24 bg-gradient-to-r from-primary/60 via-primary to-primary/60 rounded-full" />
+          </div>
 
-          <div className="flex flex-wrap justify-center gap-3 pt-5">
+          <div className="flex flex-wrap justify-center gap-3">
             {exploringSkills.map((tech, i) => (
               <span
                 key={i}
@@ -36,7 +39,7 @@ export const About = () => {
         </div>
       </section>
 
-      <section className="py-12">
+      <section className="my-16 sm:my-20">
         <div className="container mx-auto max-w-4xl text-center space-y-5">
           <div className="flex justify-center">
             <Brain className="h-10 w-10 text-primary mb-2" />

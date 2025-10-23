@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-12 mt-6 relative">
+    <section id="about" className="py-12 mt-8 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 sm:mb-10 text-center">
           About <span className="text-primary">Me</span>

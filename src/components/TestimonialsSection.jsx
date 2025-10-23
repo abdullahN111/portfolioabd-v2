@@ -3,7 +3,7 @@ import { testimonials } from "@/data/testimonials";
 
 export const TestimonialsSection = () => {
   return (
-    <section id="testimonials" className="py-24 bg-muted/10 relative">
+    <section id="testimonials" className="py-12 mt-8 bg-muted/10 relative">
       <div className="container mx-auto max-w-5xl px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
           Client <span className="text-primary">Testimonials</span>

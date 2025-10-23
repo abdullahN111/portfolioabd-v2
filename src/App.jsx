@@ -4,10 +4,9 @@ import NotFound from "@/pages/NotFound";
 import { ContactSection } from "@/pages/ContactSection";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-
-import { projects } from "@/data/projects";
-import { ProjectsSection } from "@/pages/ProjectSection";
 import { About } from "@/pages/About";
+import { ProjectDetail } from "@/pages/ProjectDetail";
+import { Projects } from "@/pages/Projects";
 
 function App() {
   return (
@@ -22,8 +21,10 @@ function App() {
           <Route path="/contact" element={<ContactSection />} />
           <Route
             path="/projects"
-            element={<ProjectsSection projects={projects} padding={"mt-36"} display={"hidden"} />}
+            element={<Projects />}
           />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

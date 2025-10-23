@@ -1,20 +1,21 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, ArrowUpRight, ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
-import { StarBackground } from "@/components/StarBackground";
 
 export const ProjectsSection = ({ projects, padding, display }) => {
   return (
     <section id="projects" className={`${padding} relative`}>
-      <StarBackground />
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
-          Featured <span className="text-primary">Projects</span>
-        </h2>
-
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects each one crafted with attention to
-          performance, design, and user experience.
+       <h1 className="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">
+          My <span className="text-primary">Project Showcase</span>
+        </h1>
+        <p className="text-muted-foreground leading-relaxed">
+          A curated selection of my professional and personal projects each
+          built with clean code, scalability, and thoughtful design. Explore how
+          I bring ideas to life through full-stack development.
         </p>
+        <div className="mt-6 mb-12 flex justify-center">
+          <span className="h-[2px] w-24 bg-gradient-to-r from-primary/60 via-primary to-primary/60 rounded-full" />
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map((project, key) => (
@@ -57,6 +58,8 @@ export const ProjectsSection = ({ projects, padding, display }) => {
                     <Link
                       to={project.demoUrl}
                       target="_blank"
+                      aria-label={project.demoUrl}
+                      title={project.demoUrl}
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <ExternalLink size={20} />
@@ -64,11 +67,20 @@ export const ProjectsSection = ({ projects, padding, display }) => {
                     <Link
                       to={project.githubUrl}
                       target="_blank"
+                      aria-label={project.githubUrl}
+                      title={project.githubUrl}
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
                       <Github size={20} />
                     </Link>
                   </div>
+                  <Link
+                    to={`/projects/${project.slug}`}
+                    className="px-3 py-2 rounded-full bg-primary text-primary-foreground font-medium text-xs hover:text-[13px] transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95 flex items-center gap-1"
+                  >
+                    View Details
+                    <ArrowUpRight className="size-[18px] hover:size-5" />
+                  </Link>
                 </div>
               </div>
             </div>

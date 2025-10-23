@@ -3,10 +3,10 @@ import { cn } from "@/lib/utils";
 import { skills, categories } from "@/data/skills";
 
 export const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("all");
+  const [activeCategory, setActiveCategory] = useState("frontend");
 
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => skill.category === activeCategory
   );
   return (
     <section id="expertise" className="py-12 relative bg-secondary/30">
@@ -32,14 +32,14 @@ export const SkillsSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {filteredSkills.map((skill, key) => {
             const Icon = skill.icon;
 
             return (
               <div
                 key={key}
-                className="bg-card p-6 rounded-lg shadow-xs card-hover"
+                className="bg-card p-4 sm:p-6 rounded-lg shadow-xs card-hover"
               >
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="font-semibold text-lg">{skill.name}</h3>

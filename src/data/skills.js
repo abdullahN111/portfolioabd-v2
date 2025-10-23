@@ -215,7 +215,7 @@ export const skills = [
   },
 ];
 
-export const categories = ["all", "frontend", "backend", "ai/ml", "tools/cms"];
+export const categories = ["frontend", "backend", "ai/ml", "tools/cms"];
 
 
 export const exploringSkills = [

@@ -1,6 +1,6 @@
 import { HeroSection } from "@/components/HeroSection";
 import { ScrollToTopButton } from "@/components/ScrollToTopButton";
-import { ProjectsSection } from "@/pages/ProjectSection";
+import { ProjectsSection } from "@/components/ProjectSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { projects } from "@/data/projects";
