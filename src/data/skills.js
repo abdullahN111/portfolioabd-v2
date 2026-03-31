@@ -9,6 +9,7 @@ import {
   FaGithub,
   FaFigma,
   FaDatabase,
+  FaPhp,
 } from "react-icons/fa";
 import {
   SiTypescript,
@@ -24,6 +25,7 @@ import {
   SiVercel,
   SiSanity,
   SiOpenai,
+  SiMysql,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -97,6 +99,27 @@ export const skills = [
     level: 95,
     category: "backend",
     icon: FaPython,
+    color: "#3776AB",
+  },
+  {
+    name: "PHP",
+    level: 80,
+    category: "backend",
+    icon: FaPhp,
+    color: "#3776AB",
+  },
+  {
+    name: "SQL",
+    level: 75,
+    category: "backend",
+    icon: SiMysql,
+    color: "#3776AB",
+  },
+  {
+    name: "MySQL",
+    level: 75,
+    category: "tools/cms",
+    icon: SiMysql,
     color: "#3776AB",
   },
   {
@@ -215,7 +238,7 @@ export const skills = [
   },
 ];
 
-export const categories = ["frontend", "backend", "ai/ml", "tools/cms"];
+export const categories = ["frontend", "backend", "tools/cms"];
 
 
 export const exploringSkills = [
