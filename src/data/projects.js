@@ -85,7 +85,7 @@ export const projects = [
       "/gallary/blogoutgallary3.jpg",
     ],
     tags: ["Next.js", "OpenAI Agent SDK", "FastAPI", "Python", "NextAuth"],
-    demoUrl: "https://blog-app.vercel.app",
+    demoUrl: "https://blogout.vercel.app",
     githubUrl:
       "https://github.com/abdullahN111/ai-agents/tree/main/Projects/blog_app_agent",
     slug: "blogout",
