@@ -11,18 +11,22 @@ const AboutSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-7 items-center">
           <div className="space-y-5">
-            <h3 className="text-2xl font-semibold">Full-Stack Web Developer</h3>
+            <h3 className="text-2xl font-semibold">
+              Full-Stack Developer & AI Engineer
+            </h3>
 
             <p className="text-muted-foreground">
-              I'm a Full-Stack Web Developer skilled in the MERN Stack, Python
-              FastAPI, Next.js, and TypeScript. I build modern, performant web
-              apps that combine dynamic frontends with scalable backend systems.
+              I'm a Full-Stack Developer and AI Engineer focused on building
+              modern web applications and AI-powered solutions. I work with
+              Next.js, React, TypeScript, Python, FastAPI, and modern database
+              technologies to build scalable and user-focused software.
             </p>
 
             <p className="text-muted-foreground">
-              Lately, I’ve been exploring AI integration and automation using
-              the OpenAI Agent SDK to build intelligent agentic systems that
-              connect seamlessly with real-world tools and APIs.
+              My current focus is Generative AI and agentic systems. I build AI
+              agents and AI-powered applications using technologies such as the
+              OpenAI Agents SDK, LangChain, and FastAPI, while exploring RAG,
+              LLM applications, and intelligent automation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -37,7 +41,7 @@ const AboutSection = () => {
                 to="/contact"
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
-               Get in Touch
+                Get in Touch
               </Link>
             </div>
           </div>
@@ -48,15 +52,13 @@ const AboutSection = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <Code className="h-6 w-6 text-primary" />
                 </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">
-                    Full-Stack Development
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Building scalable web apps with React, Next.js, Node.js,
-                    FastAPI, MongoDB, Neon, and Sqlite.
-                  </p>
-                </div>
+                <h4 className="font-semibold text-lg">
+                  Full-Stack Development
+                </h4>
+                <p className="text-muted-foreground">
+                  Building modern web applications with Next.js, React,
+                  TypeScript, Python, FastAPI, Node.js, MongoDB, and PostgreSQL.
+                </p>
               </div>
             </div>
 
@@ -65,13 +67,14 @@ const AboutSection = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <User className="h-6 w-6 text-primary" />
                 </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">AI & Automation</h4>
-                  <p className="text-muted-foreground">
-                    Integrating AI systems using OpenAI Agent SDK and automating
-                    workflows.
-                  </p>
-                </div>
+                <h4 className="font-semibold text-lg">
+                  Generative AI & AI Agents
+                </h4>
+                <p className="text-muted-foreground">
+                  Building AI-powered applications and agent-based systems using
+                  OpenAI Agents SDK, LangChain, FastAPI, and modern LLM
+                  technologies.
+                </p>
               </div>
             </div>
 
@@ -80,15 +83,14 @@ const AboutSection = () => {
                 <div className="p-3 rounded-full bg-primary/10">
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
-                <div className="text-left">
-                  <h4 className="font-semibold text-lg">
-                    Creative Problem Solving
-                  </h4>
-                  <p className="text-muted-foreground">
-                    Turning complex technical challenges into smooth,
-                    user-friendly solutions.
-                  </p>
-                </div>
+                <h4 className="font-semibold text-lg">
+                  Backend & API Development
+                </h4>
+                <p className="text-muted-foreground">
+                  Developing reliable REST APIs, backend services, database
+                  integrations, authentication systems, and AI application
+                  backends.
+                </p>
               </div>
             </div>
           </div>

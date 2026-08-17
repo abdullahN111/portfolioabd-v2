@@ -1,4 +1,4 @@
-import { Github, Linkedin, Instagram } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
 
 export const navItems = [
   { name: "Home", href: "/" },
@@ -19,8 +19,8 @@ export const socialLinks = [
     Icon: Linkedin,
   },
   {
-    href: "https://www.instagram.com/i_abdullahn/",
-    label: "Instagram",
-    Icon: Instagram,
+    href: "https://www.x.com/i_abdullahnn/",
+    label: "Twitter",
+    Icon: Twitter,
   },
 ];

@@ -3,31 +3,32 @@ import { cn } from "@/lib/utils";
 import { skills, categories } from "@/data/skills";
 
 export const SkillsSection = () => {
-  const [activeCategory, setActiveCategory] = useState("frontend");
+  const [activeCategory, setActiveCategory] = useState("ai");
 
   const filteredSkills = skills.filter(
-    (skill) => skill.category === activeCategory
+    (skill) => skill.category === activeCategory,
   );
+
   return (
     <section id="expertise" className="py-12 relative bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center">
-          My <span className="text-primary">Tech Stack</span>
+          My <span className="text-primary">Tech & Expertise</span>
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 my-12">
-          {categories.map((category, key) => (
+          {categories.map((category) => (
             <button
-              key={key}
-              onClick={() => setActiveCategory(category)}
+              key={category.id}
+              onClick={() => setActiveCategory(category.id)}
               className={cn(
-                "px-5 py-2 rounded-full transition-colors duration-300 uppercase cursor-pointer",
-                activeCategory === category
+                "px-5 py-2 rounded-full transition-colors duration-300 cursor-pointer",
+                activeCategory === category.id
                   ? "bg-primary text-primary-foreground"
-                  : "bg-secondary/70 text-forefround hover:bd-secondary"
+                  : "bg-secondary/70 text-foreground hover:bg-secondary",
               )}
             >
-              {category}
+              {category.label}
             </button>
           ))}
         </div>
@@ -43,14 +44,16 @@ export const SkillsSection = () => {
               >
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="font-semibold text-lg">{skill.name}</h3>
+
                   <span>
                     <Icon color={skill.color} size={22} />
                   </span>
                 </div>
+
                 <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
                   <div
                     className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                    style={{ width: skill.level + "%" }}
+                    style={{ width: `${skill.level}%` }}
                   />
                 </div>
 

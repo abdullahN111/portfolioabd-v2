@@ -20,16 +20,18 @@ export const HeroSection = () => {
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground mx-auto max-w-2xl opacity-0 animate-fade-in-delay-3">
-          I’m a passionate{" "}
-          <span className="text-primary font-medium">Full-Stack Developer</span>{" "}
-          crafting scalable web solutions using modern technologies. I build
-          elegant front-ends and robust back-ends that deliver seamless user
-          experiences.
+          I’m a{" "}
+          <span className="text-primary font-medium">
+            Full-Stack Developer & AI Engineer
+          </span>{" "}
+          focused on building scalable web applications and AI-powered
+          solutions. I work with modern technologies to create practical,
+          intelligent, and user-focused software.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4 sm:pt-6 opacity-0 animate-fade-in-delay-4 max-w-44 sm:max-w-full mx-auto">
           <a
-            href="/AbdullahResume.pdf"
+            href="/AbdullahCV.pdf"
             download
             className="border border-primary text-primary font-semibold px-4 py-3 rounded-lg hover:bg-primary hover:text-white transition flex items-center justify-center gap-2"
           >

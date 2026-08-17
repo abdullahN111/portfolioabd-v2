@@ -1,6 +1,4 @@
 import {
-  FaHtml5,
-  FaCss3Alt,
   FaJsSquare,
   FaReact,
   FaNodeJs,
@@ -10,7 +8,9 @@ import {
   FaFigma,
   FaDatabase,
   FaPhp,
+  FaRobot,
 } from "react-icons/fa";
+
 import {
   SiTypescript,
   SiTailwindcss,
@@ -21,29 +21,16 @@ import {
   SiPostgresql,
   SiSqlite,
   SiPandas,
-  SiScikitlearn,
   SiVercel,
   SiSanity,
   SiOpenai,
   SiMysql,
 } from "react-icons/si";
+
 import { VscVscode } from "react-icons/vsc";
 
 export const skills = [
-  {
-    name: "HTML",
-    level: 90,
-    category: "frontend",
-    icon: FaHtml5,
-    color: "#E34F26",
-  },
-  {
-    name: "CSS",
-    level: 85,
-    category: "frontend",
-    icon: FaCss3Alt,
-    color: "#1572B6",
-  },
+
   {
     name: "JavaScript",
     level: 85,
@@ -80,6 +67,22 @@ export const skills = [
     color: "#000000",
   },
 
+
+
+  {
+    name: "Python",
+    level: 90,
+    category: "backend",
+    icon: FaPython,
+    color: "#3776AB",
+  },
+  {
+    name: "FastAPI",
+    level: 80,
+    category: "backend",
+    icon: SiFastapi,
+    color: "#009688",
+  },
   {
     name: "Node.js",
     level: 75,
@@ -88,167 +91,193 @@ export const skills = [
     color: "#68A063",
   },
   {
-    name: "Express",
+    name: "Express.js",
     level: 70,
     category: "backend",
     icon: SiExpress,
     color: "#828282",
   },
   {
-    name: "Python",
-    level: 95,
-    category: "backend",
-    icon: FaPython,
-    color: "#3776AB",
-  },
-  {
     name: "PHP",
     level: 80,
     category: "backend",
     icon: FaPhp,
-    color: "#3776AB",
+    color: "#777BB4",
   },
   {
-    name: "SQL",
-    level: 75,
-    category: "backend",
-    icon: SiMysql,
-    color: "#3776AB",
-  },
-  {
-    name: "MySQL",
-    level: 75,
-    category: "tools/cms",
-    icon: SiMysql,
-    color: "#3776AB",
-  },
-  {
-    name: "FastAPI",
+    name: "REST APIs",
     level: 80,
     category: "backend",
-    icon: SiFastapi,
-    color: "#009688",
+    icon: FaDatabase,
+    color: "#336791",
   },
+
+
+
+  {
+    name: "OpenAI Agents SDK",
+    level: 80,
+    category: "ai",
+    icon: SiOpenai,
+    color: "#412991",
+  },
+  {
+    name: "LangChain",
+    level: 70,
+    category: "ai",
+    icon: FaRobot,
+    color: "#1C3C3C",
+  },
+  {
+    name: "LangGraph",
+    level: 65,
+    category: "ai",
+    icon: FaRobot,
+    color: "#1C3C3C",
+  },
+  {
+    name: "LLM Applications",
+    level: 75,
+    category: "ai",
+    icon: FaRobot,
+    color: "#412991",
+  },
+  {
+    name: "RAG",
+    level: 65,
+    category: "ai",
+    icon: FaRobot,
+    color: "#412991",
+  },
+  {
+    name: "AI Agents",
+    level: 80,
+    category: "ai",
+    icon: FaRobot,
+    color: "#412991",
+  },
+  {
+    name: "Prompt Engineering",
+    level: 80,
+    category: "ai",
+    icon: FaRobot,
+    color: "#412991",
+  },
+
+
+
   {
     name: "MongoDB",
     level: 80,
-    category: "backend",
+    category: "databases",
     icon: SiMongodb,
     color: "#47A248",
   },
   {
     name: "PostgreSQL",
-    level: 60,
-    category: "backend",
+    level: 65,
+    category: "databases",
     icon: SiPostgresql,
     color: "#336791",
   },
   {
+    name: "MySQL",
+    level: 75,
+    category: "databases",
+    icon: SiMysql,
+    color: "#4479A1",
+  },
+  {
     name: "SQLite",
     level: 80,
-    category: "backend",
+    category: "databases",
     icon: SiSqlite,
     color: "#003B57",
   },
   {
     name: "Neon",
     level: 80,
-    category: "backend",
+    category: "databases",
     icon: FaDatabase,
-    color: "#00FFFF",
+    color: "#00E5FF",
   },
 
-  {
-    name: "OpenAI Agent SDK",
-    level: 80,
-    category: "ai/ml",
-    icon: SiOpenai,
-    color: "#412991",
-  },
-  {
-    name: "Python",
-    level: 85,
-    category: "ai/ml",
-    icon: FaPython,
-    color: "#FFD43B",
-  },
-  {
-    name: "Machine Learning (Scikit-learn)",
-    level: 40,
-    category: "ai/ml",
-    icon: SiScikitlearn,
-    color: "#F7931E",
-  },
-  {
-    name: "FastAPI",
-    level: 80,
-    category: "ai/ml",
-    icon: SiFastapi,
-    color: "#009688",
-  },
-  {
-    name: "Pandas/Numpy",
-    level: 70,
-    category: "ai/ml",
-    icon: SiPandas,
-    color: "#150458",
-  },
 
   {
     name: "Git",
     level: 90,
-    category: "tools/cms",
+    category: "tools",
     icon: FaGitAlt,
     color: "#F05032",
   },
   {
     name: "GitHub",
     level: 90,
-    category: "tools/cms",
+    category: "tools",
     icon: FaGithub,
     color: "#181717",
   },
   {
-    name: "Figma",
-    level: 80,
-    category: "tools/cms",
-    icon: FaFigma,
-    color: "#F24E1E",
-  },
-  {
     name: "VS Code",
     level: 95,
-    category: "tools/cms",
+    category: "tools",
     icon: VscVscode,
     color: "#007ACC",
   },
   {
+    name: "Figma",
+    level: 80,
+    category: "tools",
+    icon: FaFigma,
+    color: "#F24E1E",
+  },
+  {
     name: "Sanity CMS",
     level: 90,
-    category: "tools/cms",
+    category: "tools",
     icon: SiSanity,
     color: "#F03E2F",
   },
   {
     name: "Vercel",
     level: 85,
-    category: "tools/cms",
+    category: "tools",
     icon: SiVercel,
     color: "#000000",
   },
 ];
 
-export const categories = ["frontend", "backend", "tools/cms"];
-
+export const categories = [
+  {
+    id: "frontend",
+    label: "Frontend Development",
+  },
+  {
+    id: "backend",
+    label: "Backend Development",
+  },
+  {
+    id: "ai",
+    label: "AI & Intelligent Systems",
+  },
+  {
+    id: "databases",
+    label: "Databases",
+  },
+  {
+    id: "tools",
+    label: "Tools & Platforms",
+  },
+];
 
 export const exploringSkills = [
-              "OpenAI Agent SDK",
-              "Prompt Engineering",
-              "n8n Workflows",
-              "Model Context Protocol (MCP)",
-              "Machine Learning",
-              "Data Science",
-              "DSA",
-              "Databases",
-              "Backend Architecture",
-            ]
+  "Advanced AI Agents",
+  "RAG Systems",
+  "Model Context Protocol (MCP)",
+  "n8n Workflows",
+  "Generative AI",
+  "Machine Learning",
+  "Data Science",
+  "DSA",
+  "Backend Architecture",
+];
