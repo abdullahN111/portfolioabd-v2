@@ -47,50 +47,66 @@ const AboutSection = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-4">
-            <div className="gradient-border p-4 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-2 rounded-full bg-primary/10">
-                  <Code className="h-5 w-5 text-primary" />
+            <div className="gradient-border p-5 card-hover h-full min-h-[150px]">
+              <div className="flex gap-4 h-full">
+                <div className="shrink-0">
+                  <div className="p-3 rounded-xl bg-primary/10">
+                    <Code className="h-5 w-5 text-primary" />
+                  </div>
                 </div>
-                <h4 className="font-semibold text-base">
-                  Full-Stack Development
-                </h4>
-                <p className="text-muted-foreground text-sm">
-                  Building modern web applications with Next.js, React,
-                  TypeScript, Python, FastAPI, Node.js, MongoDB, and PostgreSQL.
-                </p>
+
+                <div className="flex flex-col">
+                  <h4 className="font-semibold text-base mb-2">
+                    Full-Stack Development
+                  </h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Building modern web applications with Next.js, React,
+                    TypeScript, Python, FastAPI, Node.js, MongoDB, and
+                    PostgreSQL.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="gradient-border p-4 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-2 rounded-full bg-primary/10">
-                  <User className="h-5 w-5 text-primary" />
+            <div className="gradient-border p-5 card-hover h-full min-h-[150px]">
+              <div className="flex gap-4 h-full">
+                <div className="shrink-0">
+                  <div className="p-3 rounded-xl bg-primary/10">
+                    <User className="h-5 w-5 text-primary" />
+                  </div>
                 </div>
-                <h4 className="font-semibold text-base">
-                  Generative AI & AI Agents
-                </h4>
-                <p className="text-muted-foreground text-sm">
-                  Building AI-powered applications and agent-based systems using
-                  OpenAI Agents SDK, LangChain, FastAPI, and modern LLM
-                  technologies.
-                </p>
+
+                <div className="flex flex-col">
+                  <h4 className="font-semibold text-base mb-2">
+                    Generative AI & AI Agents
+                  </h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Building AI-powered applications and intelligent agent
+                    systems with OpenAI Agents SDK, LangChain, FastAPI, and
+                    modern LLM technologies.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="gradient-border p-4 card-hover">
-              <div className="flex items-start gap-4">
-                <div className="p-2 rounded-full bg-primary/10">
-                  <Briefcase className="h-5 w-5 text-primary" />
+            <div className="gradient-border p-5 card-hover h-full min-h-[150px]">
+              <div className="flex gap-4 h-full">
+                <div className="shrink-0">
+                  <div className="p-3 rounded-xl bg-primary/10">
+                    <Briefcase className="h-5 w-5 text-primary" />
+                  </div>
                 </div>
-                <h4 className="font-semibold text-base">
-                  Backend & API Development
-                </h4>
-                <p className="text-muted-foreground text-sm">
-                  Developing reliable REST APIs, backend services, database
-                  integrations, authentication systems, and AI application
-                  backends.
-                </p>
+
+                <div className="flex flex-col">
+                  <h4 className="font-semibold text-base mb-2">
+                    Backend & API Development
+                  </h4>
+                  <p className="text-muted-foreground text-sm leading-relaxed">
+                    Developing reliable APIs, backend services, database
+                    integrations, authentication systems, and AI application
+                    backends.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
