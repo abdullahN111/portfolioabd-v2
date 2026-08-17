@@ -9,6 +9,7 @@ import {
   FaDatabase,
   FaPhp,
   FaRobot,
+  FaAngular
 } from "react-icons/fa";
 
 import {
@@ -39,6 +40,13 @@ export const skills = [
     color: "#F7DF1E",
   },
   {
+    name: "Next.js",
+    level: 90,
+    category: "frontend",
+    icon: SiNextdotjs,
+    color: "#000000",
+  },
+  {
     name: "React",
     level: 90,
     category: "frontend",
@@ -60,10 +68,10 @@ export const skills = [
     color: "#38BDF8",
   },
   {
-    name: "Next.js",
+    name: "Angular.js",
     level: 90,
     category: "frontend",
-    icon: SiNextdotjs,
+    icon: FaAngular,
     color: "#000000",
   },
 
@@ -124,13 +132,6 @@ export const skills = [
   {
     name: "LangChain",
     level: 70,
-    category: "ai",
-    icon: FaRobot,
-    color: "#1C3C3C",
-  },
-  {
-    name: "LangGraph",
-    level: 65,
     category: "ai",
     icon: FaRobot,
     color: "#1C3C3C",
