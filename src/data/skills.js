@@ -69,7 +69,7 @@ export const skills = [
   },
   {
     name: "Angular.js",
-    level: 90,
+    level: 70,
     category: "frontend",
     icon: FaAngular,
     color: "#000000",
