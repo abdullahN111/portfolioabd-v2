@@ -52,10 +52,10 @@ const AboutSection = () => {
                 <div className="p-2 rounded-full bg-primary/10">
                   <Code className="h-5 w-5 text-primary" />
                 </div>
-                <h4 className="font-semibold text-lg">
+                <h4 className="font-semibold text-base">
                   Full-Stack Development
                 </h4>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   Building modern web applications with Next.js, React,
                   TypeScript, Python, FastAPI, Node.js, MongoDB, and PostgreSQL.
                 </p>
@@ -67,10 +67,10 @@ const AboutSection = () => {
                 <div className="p-2 rounded-full bg-primary/10">
                   <User className="h-5 w-5 text-primary" />
                 </div>
-                <h4 className="font-semibold text-lg">
+                <h4 className="font-semibold text-base">
                   Generative AI & AI Agents
                 </h4>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   Building AI-powered applications and agent-based systems using
                   OpenAI Agents SDK, LangChain, FastAPI, and modern LLM
                   technologies.
@@ -83,10 +83,10 @@ const AboutSection = () => {
                 <div className="p-2 rounded-full bg-primary/10">
                   <Briefcase className="h-5 w-5 text-primary" />
                 </div>
-                <h4 className="font-semibold text-lg">
+                <h4 className="font-semibold text-base">
                   Backend & API Development
                 </h4>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-sm">
                   Developing reliable REST APIs, backend services, database
                   integrations, authentication systems, and AI application
                   backends.
