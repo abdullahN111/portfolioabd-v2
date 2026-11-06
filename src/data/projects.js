@@ -46,6 +46,33 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Fashion Home Sourcing",
+    description: description.fashionhome,
+    overview: overview.fashionhome,
+    planning: planning.fashionhome,
+    challenges: challenges.fashionhome,
+    solutions: solutions.fashionhome,
+    image: "/projects/fashionhome.png",
+    gallary: [
+      "/gallary/fashionhomegallary1.png",
+      "/gallary/fashionhomegallary2.png",
+      "/gallary/fashionhomegallary3.png",
+      "/gallary/fashionhomegallary4.png",
+      "/gallary/fashionhomegallary5.png",
+    ],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Resend"],
+    demoUrl: "https://fashion-home-sourcing.vercel.app/",
+    githubUrl: "https://github.com/abdullahN111/",
+    slug: "fashion-home-sourcing",
+    quickInfo: {
+      duration: "2 months",
+      role: "Full Stack Developer",
+      tools: ["Next.js", "Vercel", "VS Code", "Git", "Tailwind CSS"],
+      status: "Completed",
+    },
+  },
+  {
+    id: 3,
     title: "Pak Alpha Manufacturing",
     description: description.pakalpha,
     overview: overview.pakalpha,
@@ -71,7 +98,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Blogout",
     description: description.blogout,
     overview: overview.blogout,
@@ -98,7 +125,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "ResumeAbd",
     description: description.resumeabd,
     overview: overview.resumeabd,
@@ -125,7 +152,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "AbdBlog",
     description: description.abdblog,
     overview: overview.abdblog,
@@ -150,7 +177,7 @@ export const projects = [
     },
   },
   {
-    id: 6,
+    id: 7,
     title: "AI Agents",
     description: description.aiagents,
     overview: overview.aiagents,
@@ -175,7 +202,7 @@ export const projects = [
     },
   },
   {
-    id: 7,
+    id: 8,
     title: "Python CLI Projects",
     description: description.pythoncli,
     overview: overview.pythoncli,

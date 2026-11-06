@@ -1,6 +1,8 @@
 export const description = {
   furniro:
     "A full-stack furniture marketplace featuring an authenticated user dashboard, seamless checkout, and Sanity-powered content management built using Next.js.",
+  fashionhome:
+    "A modern B2B global textile sourcing and manufacturing platform showcasing engineered fabrics, institutional home textiles, interactive product catalogs, and quote request workflows.",
   pakalpha:
     "A professional manufacturing website for a Riyadh-based company specializing in tile bond and grout production, featuring domain setup, profile management, and automated email communication powered by Resend.",
   blogout:
@@ -19,6 +21,9 @@ export const overview = {
   furniro: `Furniro is a modern online furniture store designed to deliver an elegant and user-friendly shopping experience. Users can explore a variety of furniture items, view detailed information, and manage selections through a simple interface.
 
 Focused on aesthetics, performance, and accessibility, Furniro reflects the look and feel of a high-end furniture brand. It also includes an admin dashboard for managing products, customers, and store activity, offering a seamless digital experience that balances style and functionality.`,
+  fashionhome: `Fashion Home Sourcing is a premier B2B web platform built for a Pakistan-based global textile manufacturer and exporter with over three decades of industry presence. The platform presents their luxury home textiles, institutional hospitality linens, engineered fabrics, and precision garments to international buyers across North America, Europe, and the Middle East.
+
+Designed with a refined, corporate aesthetic, the website features interactive 3D flip cards for core values, a filterable finished-goods product catalog with detailed technical specifications (GSM, weave, and fiber composition), international compliance certifications, and a streamlined quote request and inquiry experience.`,
   pakalpha: `Pak Alpha Manufacturing is a professional business website for a Riyadh-based construction materials company specializing in high-quality tile bond and grout. The platform showcases the company’s products, brand identity, and regional expansion plans through a clean and modern design.
 
 It serves as the company’s official online presence, offering clients an easy way to explore services and contact the team. The design emphasizes professionalism, clarity, and accessibility, reflecting Pak Alpha’s commitment to quality and innovation.`,
@@ -42,6 +47,9 @@ export const planning = {
   furniro: `The planning phase began by defining Furniro’s goal to build a fast, clean, and manageable platform for showcasing furniture products. The design emphasized simplicity and product-focused layouts for a minimal, premium experience.
 
 The project was built with Next.js 14 for its App Router and SSR features, styled with Tailwind CSS, and secured with Google authentication via NextAuth. Sanity CMS handled dynamic product management, while the dashboard ensured smooth backend operations. Development followed structured stages from design to deployment for a complete, production-ready workflow.`,
+  fashionhome: `The planning phase focused on establishing a credible, high-converting digital storefront for global B2B textile buyers and sourcing partners. Key priorities included structuring complex textile specifications clearly, highlighting international compliance standards (GOTS, OEKO-TEX, ISO, WRAP, BSCI), and enabling seamless buyer inquiries.
+
+Built with Next.js and Tailwind CSS, the architecture emphasizes fast page loads, responsive multi-page navigation (Home, Products, About Us, Contact Us), interactive UI micro-interactions such as flip cards and dynamic category filtering, and SEO optimization tailored for international export visibility.`,
   pakalpha: `The planning phase began with understanding the client’s goal of building a professional, content-focused website to highlight their manufacturing expertise. The project was developed using Next.js for speed and SEO performance, styled with Tailwind CSS for responsive visuals, and integrated with Resend for email automation.
 
 Domain setup under alphaalalamiyya.com and a downloadable company profile PDF were included to strengthen the brand identity. Each stagefrom design and structure to deployment was planned for efficiency, reliability, and a polished presentation.`,
@@ -70,6 +78,12 @@ export const challenges = {
     "Implementing secure and smooth authentication",
     "Maintaining consistent UI across dashboard and storefront",
     "Handling performance and SEO optimization",
+  ],
+  fashionhome: [
+    "Organizing diverse B2B textile categories and technical product specifications (GSM, weave constructions, and finishes) into an intuitive catalog",
+    "Designing a luxury corporate brand identity with engaging interactive elements like 3D flip cards and dynamic hero sliders",
+    "Ensuring fast load times while rendering high-resolution textile and hospitality imagery",
+    "Building a streamlined quote request and inquiry workflow for international buyers",
   ],
   pakalpha: [
     "Building a professional business presence with limited initial content",
@@ -113,6 +127,12 @@ export const solutions = {
     "Used NextAuth with Google provider, ensuring quick login and OAuth 2.0 compliance",
     "Created reusable UI components and layout templates using Tailwind CSS and React components",
     "Leveraged Next.js built-in optimizations like static generation, server components, and image optimization for faster load times and improved SEO",
+  ],
+  fashionhome: [
+    "Implemented dynamic category tabs with live product counts and structured specification badges for instant catalog filtering",
+    "Crafted a cohesive gold-and-navy theme using Tailwind CSS with smooth CSS transforms and interactive card states",
+    "Leveraged Next.js image optimization and static generation for rapid performance across desktop and mobile devices",
+    "Designed clear call-to-action touchpoints and quote request pathways across every page to maximize B2B lead conversion",
   ],
   pakalpha: [
     "Designed a clean, professional layout highlighting products and company details effectively",
