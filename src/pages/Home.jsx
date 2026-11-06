@@ -6,24 +6,24 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { projects } from "@/data/projects";
 import AboutSection from "@/components/AboutSection";
 import { StarBackground } from "@/components/StarBackground";
+import { SEO } from "@/components/SEO";
 
 const Home = () => {
-  const featuredProjects = projects.slice(0, 6);
+  const featuredProjects = projects.filter((p) => p.featured).slice(0, 6);
+
   return (
     <main className="min-h-screen bg-background text-foreground overflow-x-hidden relative">
-      <div>
-        <StarBackground />
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection
-          projects={featuredProjects}
-          padding={"py-12"}
-          display={"flex"}
-        />
-        <SkillsSection />
-        <TestimonialsSection />
-      </div>
-
+      <SEO />
+      <StarBackground />
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection
+        projects={featuredProjects}
+        padding="py-16"
+        display="flex"
+      />
+      <SkillsSection />
+      <TestimonialsSection />
       <ScrollToTopButton />
     </main>
   );

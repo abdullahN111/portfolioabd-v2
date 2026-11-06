@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/abddev.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abd.Dev</title>
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Muhammad Abdullah | Full-Stack Developer & AI Engineer</title>
+    <meta
+      name="title"
+      content="Muhammad Abdullah | Full-Stack Developer & AI Engineer"
+    />
+    <meta
+      name="description"
+      content="Portfolio of Muhammad Abdullah (Abd.Dev) — Full-Stack Developer & AI Engineer specializing in Next.js, React, TypeScript, Python, FastAPI, and OpenAI Agentic Systems."
+    />
+    <meta
+      name="keywords"
+      content="Muhammad Abdullah, Abd.Dev, Full-Stack Developer, AI Engineer, Next.js Developer, React Developer, Python FastAPI, OpenAI Agents SDK, Web Developer Karachi, Software Engineer Portfolio"
+    />
+    <meta name="author" content="Muhammad Abdullah" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#070b14" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Muhammad Abdullah | Full-Stack Developer & AI Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Building scalable full-stack web platforms, B2B digital products, and intelligent AI agent systems with Next.js, TypeScript, Python, and FastAPI."
+    />
+    <meta property="og:image" content="/abddev.png" />
+    <meta property="og:site_name" content="Abd.Dev Portfolio" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@i_abdullahnn" />
+    <meta
+      name="twitter:title"
+      content="Muhammad Abdullah | Full-Stack Developer & AI Engineer"
+    />
+    <meta
+      name="twitter:description"
+      content="Building scalable full-stack web platforms, B2B digital products, and intelligent AI agent systems with Next.js, TypeScript, Python, and FastAPI."
+    />
+    <meta name="twitter:image" content="/abddev.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhammad Abdullah",
+        "alternateName": "Abd.Dev",
+        "jobTitle": "Full-Stack Developer & AI Engineer",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Karachi",
+          "addressCountry": "PK"
+        },
+        "email": "mailto:myselfabdullah360@gmail.com",
+        "sameAs": [
+          "https://github.com/abdullahN111/",
+          "https://www.linkedin.com/in/m-abdullah-nadeem/",
+          "https://www.x.com/i_abdullahnn/"
+        ],
+        "knowsAbout": [
+          "Next.js",
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "Python",
+          "FastAPI",
+          "OpenAI Agents SDK",
+          "LangChain",
+          "Full-Stack Web Development",
+          "Generative AI"
+        ]
+      }
+    </script>
+
+    <!-- Prevent Theme Flash Before React Mounts -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme");
+          if (saved === "light") {
+            document.documentElement.classList.remove("dark");
+          } else {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
