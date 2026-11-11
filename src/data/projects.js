@@ -2,7 +2,7 @@ const buildAssets = (slug, ext = "jpg", galleryCount = 0) => ({
   image: `/projects/${slug}/cover.${ext}`,
   gallery: Array.from(
     { length: galleryCount },
-    (_, i) => `/projects/${slug}/gallery-${i + 1}.${ext}`
+    (_, i) => `/projects/${slug}/gallery-${i + 1}.${ext}`,
   ),
 });
 
@@ -204,41 +204,6 @@ The suite demonstrates how autonomous agents collaborate and hand off tasks seam
   },
   {
     id: 6,
-    slug: "abdblog",
-    title: "AbdBlog — Headless CMS Publication",
-    category: "Full Stack",
-    badge: "Headless CMS",
-    featured: true,
-    ...buildAssets("abdblog", "jpg", 0),
-    tags: ["Next.js", "Sanity CMS", "Tailwind CSS", "GROQ", "SEO"],
-    demoUrl: "https://abd-blog.vercel.app/",
-    quickInfo: {
-      duration: "2 months",
-      role: "Full-Stack Developer",
-      tools: ["Vercel", "Sanity Studio", "VS Code", "Git"],
-      status: "Completed",
-    },
-    description:
-      "A fast, SEO-optimized technical blog platform built with Next.js and Sanity CMS, offering instant headless publishing and clean editorial typography.",
-    overview: `AbdBlog is a performance-focused publishing platform designed to make reading and writing technical articles fast, accessible, and visually engaging.
-
-Powered by Sanity Headless CMS and Next.js, AbdBlog pairs a distraction-free reading layout with real-time studio content management—ideal for developer blogs and digital publications.`,
-    planning: `The planning phase centered around building a lightweight, SEO-first publication with strong Core Web Vitals and an effortless authoring workflow in Sanity Studio.
-
-Next.js SSR and static generation ensure rapid page loads and complete search engine indexability, while Sanity GROQ queries deliver structured content, categories, and author profiles dynamically.`,
-    challenges: [
-      "Querying and rendering rich-text portable content efficiently from Sanity CMS",
-      "Maintaining consistent editorial typography and responsive reading layouts across devices",
-      "Maximizing technical SEO and Open Graph metadata with a headless CMS backend",
-    ],
-    solutions: [
-      "Wrote optimized GROQ queries with custom Portable Text serializers for rich article rendering",
-      "Built a cohesive typographic scale and dark/light theme support using Tailwind CSS",
-      "Implemented Next.js dynamic metadata and static route generation for instant page transitions",
-    ],
-  },
-  {
-    id: 7,
     slug: "resumeabd",
     title: "ResumeAbd — Interactive Resume Builder",
     category: "Full Stack",
@@ -271,7 +236,7 @@ Once complete, users can export a print-ready PDF layout that preserves typograp
     ],
   },
   {
-    id: 8,
+    id: 7,
     slug: "python-cli-projects",
     title: "Python CLI & Automation Suite",
     category: "AI & Backend",
