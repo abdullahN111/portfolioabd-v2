@@ -16,6 +16,55 @@ export const projectCategories = [
 export const projects = [
   {
     id: 1,
+    slug: "opstriage-ai",
+    title: "OpsTriage AI — Autonomous Operations Agent",
+    category: "AI & Backend",
+    badge: "Autonomous AI Agent",
+    featured: true,
+    ...buildAssets("opstriage-ai", "png", 2),
+    tags: [
+      "Next.js",
+      "Gemini AI",
+      "Google Workspace APIs",
+      "OAuth 2.0",
+      "Agentic Workflow",
+    ],
+    demoUrl: "https://opstriage-ai.vercel.app/",
+    quickInfo: {
+      duration: "1 day",
+      role: "AI Engineer & Full-Stack Developer",
+      tools: [
+        "Next.js",
+        "Gemini API",
+        "Gmail / Drive / Sheets API",
+        "Tailwind CSS",
+        "Vercel",
+      ],
+      status: "Completed",
+    },
+    description:
+      "An enterprise AI email triage agent that summarizes inbox messages, executes a 5-step policy-grounded triage pipeline across Gmail, Google Drive SOPs, and Google Sheets, and drafts refineable replies.",
+    overview: `OpsTriage AI is an autonomous operations and email triage system designed for large organizations handling high-priority finance, billing, security, and support escalations. Built in an intensive one-day sprint, it connects directly to Gmail, Google Drive, and Google Sheets to turn unstructured incoming emails into audited, policy-compliant resolutions in seconds.
+
+The platform features a dual-mode architecture: an interactive Sandbox Mode open to public visitors with realistic enterprise scenarios, and a Live OAuth Mode restricted via Google OAuth to fetch and process real inbox emails. Operators can generate instant AI email summaries, trigger a 5-step autonomous triage run, refine the drafted response with AI prompts or manual edits, and approve/send the final reply directly.`,
+    planning: `The architecture was planned around a transparent, human-in-the-loop 5-step agentic pipeline: (1) Classify Intent & Priority Tier (P0–P3), (2) Extract Financial & Temporal Entities (amounts, deadlines, invoice IDs), (3) Search Google Drive SOP Folder for matching organizational policies, (4) Append a structured audit row to the OpsTriage Google Sheet ledger, and (5) Draft a policy-grounded email reply citing the exact SOP section.
+
+To make the application publicly demonstrable without exposing private inbox data, a deterministic Sandbox Mode was engineered alongside the owner-restricted Google OAuth flow, arranged in a three-pane command-center layout (Inbox Queue, AI Agent Triage Inspector, and Review & Approve Reply studio).`,
+    challenges: [
+      "Orchestrating a multi-step agent pipeline across Gmail, Google Drive SOP documents, and Google Sheets with sub-3-second latency",
+      "Grounding AI-drafted replies strictly in organizational SOP policies from Google Drive without hallucinating terms or approval thresholds",
+      "Allowing public visitors to test the full 5-step triage and AI draft-refinement workflow while locking Live OAuth access to the owner's Google account",
+      "Designing a dense three-pane enterprise command center that keeps queue status, JSON execution traces, and live draft editing intuitive",
+    ],
+    solutions: [
+      "Built a structured 5-stage execution pipeline with typed JSON outputs for intent classification, entity extraction, Drive SOP retrieval, Sheets logging, and draft generation",
+      "Injected matched Google Drive SOP clauses directly into the drafting and AI-refinement context so every reply cites verified policy rules",
+      "Implemented seamless switching between a pre-loaded enterprise Sandbox Mode for public demos and an allowlisted Google OAuth 2.0 integration for live inbox operations",
+      "Crafted a dark-mode 3-column workspace with real-time queue metrics, collapsible email summaries, step-by-step execution telemetry, and one-click AI draft refinement",
+    ],
+  },
+  {
+    id: 2,
     slug: "fashion-home-sourcing",
     title: "Fashion Home Sourcing",
     category: "Client Work",
@@ -52,7 +101,7 @@ Built with Next.js and Tailwind CSS, the architecture emphasizes fast page loads
     ],
   },
   {
-    id: 2,
+    id: 3,
     slug: "furniro-furniture-marketplace",
     title: "Furniro — Furniture Marketplace",
     category: "Full Stack",
@@ -96,7 +145,7 @@ The project was built with Next.js App Router and SSR features, styled with Tail
     ],
   },
   {
-    id: 3,
+    id: 4,
     slug: "pak-alpha-manufacturing",
     title: "Pak Alpha Manufacturing",
     category: "Client Work",
@@ -133,7 +182,7 @@ Custom domain setup under alphaalalamiyya.com and a downloadable company profile
     ],
   },
   {
-    id: 4,
+    id: 5,
     slug: "blogout",
     title: "Blogout — AI Blogging Platform",
     category: "AI & Backend",
@@ -170,7 +219,7 @@ The frontend and backend communicate over structured REST endpoints, keeping the
     ],
   },
   {
-    id: 5,
+    id: 6,
     slug: "ai-agents",
     title: "Multi-Agent AI Systems Suite",
     category: "AI & Backend",
@@ -203,7 +252,7 @@ The suite demonstrates how autonomous agents collaborate and hand off tasks seam
     ],
   },
   {
-    id: 6,
+    id: 7,
     slug: "resumeabd",
     title: "ResumeAbd — Interactive Resume Builder",
     category: "Full Stack",
@@ -236,7 +285,7 @@ Once complete, users can export a print-ready PDF layout that preserves typograp
     ],
   },
   {
-    id: 7,
+    id: 8,
     slug: "python-cli-projects",
     title: "Python CLI & Automation Suite",
     category: "AI & Backend",
