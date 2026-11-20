@@ -1,4 +1,13 @@
-import { Mail, MapPin, Phone, Send, Github, Linkedin } from "lucide-react";
+import {
+  Mail,
+  MapPin,
+  Phone,
+  Send,
+  Github,
+  Linkedin,
+  CheckCircle2,
+  AlertCircle,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -10,6 +19,7 @@ import { motion } from "framer-motion";
 export const ContactSection = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -18,11 +28,13 @@ export const ContactSection = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    if (submitStatus) setSubmitStatus(null);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
 
     try {
       await emailjs.send(
@@ -30,11 +42,20 @@ export const ContactSection = () => {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           name: formData.name,
+          from_name: formData.name,
           email: formData.email,
+          from_email: formData.email,
+          reply_to: formData.email,
+          title: `Message from ${formData.name} (${formData.email})`,
           message: formData.message,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );
+
+      setSubmitStatus({
+        type: "success",
+        text: "Thank you for reaching out! Your message has been sent and I'll get back to you soon.",
+      });
 
       toast({
         title: "Message sent!",
@@ -43,7 +64,15 @@ export const ContactSection = () => {
 
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error("EmailJS error:", error);
+      console.error(
+        "EmailJS error:",
+        error?.status,
+        error?.text || error?.message || error
+      );
+      setSubmitStatus({
+        type: "error",
+        text: "Email service is temporarily unavailable. Please click 'Send via Email Client' below or email myselfabdullah360@gmail.com directly.",
+      });
       toast({
         title: "Failed to send message",
         description: "Please try again or email me directly.",
@@ -244,6 +273,39 @@ export const ContactSection = () => {
                   className="w-full px-4 py-3 rounded-xl border border-border bg-background/80 text-sm focus:ring-2 focus:ring-primary focus:outline-none resize-none transition"
                 />
               </div>
+
+              {submitStatus && (
+                <div
+                  role="status"
+                  className={cn(
+                    "flex items-start gap-3 rounded-xl border p-4 text-sm",
+                    submitStatus.type === "success"
+                      ? "border-emerald-500/30 bg-emerald-500/10 text-emerald-400"
+                      : "border-rose-500/30 bg-rose-500/10 text-rose-400"
+                  )}
+                >
+                  {submitStatus.type === "success" ? (
+                    <CheckCircle2 className="h-5 w-5 shrink-0 mt-0.5" />
+                  ) : (
+                    <AlertCircle className="h-5 w-5 shrink-0 mt-0.5" />
+                  )}
+                  <div className="space-y-2">
+                    <p>{submitStatus.text}</p>
+                    {submitStatus.type === "error" && (
+                      <a
+                        href={`mailto:myselfabdullah360@gmail.com?subject=${encodeURIComponent(
+                          `Portfolio Inquiry from ${formData.name || "Visitor"}`
+                        )}&body=${encodeURIComponent(
+                          `${formData.message}\n\nFrom: ${formData.name} (${formData.email})`
+                        )}`}
+                        className="inline-flex items-center gap-1.5 font-semibold underline hover:text-rose-300"
+                      >
+                        Send via Email Client →
+                      </a>
+                    )}
+                  </div>
+                </div>
+              )}
 
               <button
                 type="submit"
