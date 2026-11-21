@@ -1,10 +1,11 @@
 import { StarBackground } from "@/components/StarBackground";
 import { ProjectsSection } from "@/components/ProjectSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
-import { projects } from "@/data/projects";
+import { useProjects } from "@/hooks/useProjects";
 import { SEO } from "@/components/SEO";
 
 export const Projects = () => {
+  const { projects } = useProjects();
   return (
     <main className="min-h-screen pt-20 pb-12 relative overflow-hidden">
       <SEO

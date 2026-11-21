@@ -36,18 +36,27 @@ export const ContactSection = () => {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
+    const structuredMessage = [
+      `Sender Name: ${formData.name}`,
+      `Sender Email: ${formData.email}`,
+      `----------------------------------------`,
+      `Message:`,
+      formData.message,
+    ].join("\n");
+
     try {
       await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          name: formData.name,
+          name: `${formData.name} (${formData.email})`,
           from_name: formData.name,
           email: formData.email,
           from_email: formData.email,
           reply_to: formData.email,
-          title: `Message from ${formData.name} (${formData.email})`,
-          message: formData.message,
+          title: `New Inquiry from ${formData.name} (${formData.email})`,
+          message: structuredMessage,
+          raw_message: formData.message,
         },
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       );

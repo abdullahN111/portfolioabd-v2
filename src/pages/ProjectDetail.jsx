@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { projects } from "@/data/projects";
+import { useProjects } from "@/hooks/useProjects";
 import {
   ArrowLeft,
   ExternalLink,
@@ -19,6 +19,7 @@ import { StarBackground } from "@/components/StarBackground";
 
 export const ProjectDetail = () => {
   const { slug } = useParams();
+  const { projects } = useProjects();
   const project = projects.find((p) => p.slug === slug);
   const [selectedImage, setSelectedImage] = useState(null);
 

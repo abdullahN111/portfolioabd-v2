@@ -3,12 +3,13 @@ import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { ProjectsSection } from "@/components/ProjectSection";
 import { SkillsSection } from "@/components/SkillsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
-import { projects } from "@/data/projects";
+import { useProjects } from "@/hooks/useProjects";
 import AboutSection from "@/components/AboutSection";
 import { StarBackground } from "@/components/StarBackground";
 import { SEO } from "@/components/SEO";
 
 const Home = () => {
+  const { projects } = useProjects();
   const featuredProjects = projects.filter((p) => p.featured).slice(0, 6);
 
   return (

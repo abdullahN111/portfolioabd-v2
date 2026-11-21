@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { About } from "@/pages/About";
 import { ProjectDetail } from "@/pages/ProjectDetail";
 import { Projects } from "@/pages/Projects";
+import { AdminStudio } from "@/pages/AdminStudio";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
@@ -26,6 +27,9 @@ function App() {
             element={<Projects />}
           />
           <Route path="/projects/:slug" element={<ProjectDetail />} />
+          {import.meta.env.DEV && (
+            <Route path="/admin-abddev" element={<AdminStudio />} />
+          )}
 
           <Route path="*" element={<NotFound />} />
         </Routes>
